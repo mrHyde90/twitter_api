@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v1 do
-      resources :users
+      resources :users, only: [:index, :show, :update, :destroy]
+      post '/login', to: 'authentication#login'
+      post '/signup', to: 'authentication#signup'
     end
   end
 end

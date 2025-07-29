@@ -112,6 +112,8 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jsonapi-renderer (0.2.2)
+    jwt (3.1.2)
+      base64
     logger (1.7.0)
     loofah (2.24.1)
       crass (~> 1.0.2)
@@ -234,6 +236,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
   debug
+  jwt
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.1)
